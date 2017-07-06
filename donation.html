@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="content-language" content="es" />
+<title>Donaciones</title>
+
+
+<style type="text/css">
+* { margin: 0px; padding: 0px; }
+body { background-color: #c7c7c7; color: #333333; font-family: sans-serif; font-size: 1em; margin: 0px; padding: 0px; }
+input, textarea, select { font-family: sans-serif; font-size: 1.0em; }
+a { color: #003399; text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1, h2, h3 { text-align: left; font-weight: 600; margin: 2em 0px 0.2em 0px; line-height: 120%; }
+h1 { margin: 0px 0px 3em 0px; }
+h2 {  }
+h3 {  }
+table, tbody, tr, th, td { font-size: 1em; }
+td { vertical-align: top; }
+b, strong { font-weight: 600; }
+p, li { margin: 0px 0px 0.67em 0px; }
+ul, ol { padding-left: 2em; margin-bottom: 1em; }
+img, div { display: block; max-width: 100% !important; }
+
+.boton { padding: 4px 10px 4px 10px; border-radius: 4px; background-color: #cc0000; font-size: 100%; color: #ffffff; }
+.boton a { text-decoration: none; color: #ffffff; }
+
+/* --- Todas las resoluciones inferiores al estándar de 960px --- */
+@media only screen and (max-width: 480px), only screen and (min-width: 800px) and (orientation: portrait), only screen and (min-width: 768px) and (orientation: portrait) {
+
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+</script>
+
+
+</head>
+
+
+
+
+<body>
+<div id='' class='' style='width: 960px; margin: 0px auto 0px auto; background-color: #ffffff; '>
+<div id='' class='' style='padding: 40px; '>
+
+
+
+
+<div class='pago_producto'>
+<form action='https://www.paypal.com/cgi-bin/webscr' method='post' id='formulario_paypal'>
+
+	<p style='text-align: center; '>Amount:
+		<select name='amount' id='amount' style='text-align: right; '>
+			<option value='5'>€ 5</option>
+			<option value='10'>€ 10</option>
+			<option value='15'>€ 15</option>
+			<option value='20'>€ 20</option>
+			<option value='25'>€ 25</option>
+			<option value='30'>€ 30</option>
+			<option value='40'>€ 40</option>
+			<option value='50'>€ 50</option>
+			<option value='100'>€ 100</option>
+		</select>
+	</p>
+	<p style='text-align: center; '>
+		<input type='hidden' name='charset' value='utf-8' />
+		<input type='hidden' name='lc' value='EN' />
+		<input type='hidden' name='business' value='agocorona@gmail.com' />
+		<input type='hidden' name='bn' value='TARSIS_WPS' />
+		<input type='hidden' name='cmd' value='_donations' />
+		<input type='hidden' name='item_name' value='Donation' />
+		<input type='hidden' name='item_number' value='DONATION' />
+		<input type='hidden' name='currency_code' value='EUR' />
+		<input type='hidden' name='return' value='https://agocorona.github.io/thankyou.html' />
+		<input type='hidden' name='cancel_return' value='https://agocorona.github.io/wrong.html' />
+		<input type='hidden' name='no_note' value='1' />
+		<input type='hidden' name='no_shipping' value='1' />
+		<input type='hidden' name='cbt' value='Go back to the GIT repository' />
+		<input type='image' name='submit' border='0' src='https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif' alt='PayPal' />
+		<img alt='' border='0' width='1' height='1' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' />
+	</p>
+
+</form>
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
+</body>
+
+</html>
